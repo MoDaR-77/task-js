@@ -1,0 +1,114 @@
+body {
+    background-color: #2f1410;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contaner {
+    background-color: white;
+    width: 380px;
+    max-width: 95%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4A90E2; 
+    color: white;
+}
+
+.top .text1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.addpro {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    display: none; 
+}
+.addpro p {
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    color: #333;
+}
+.addpro input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.addpro button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.tasks {
+    padding: 20px;
+    height: 350px; 
+}
+
+.task-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    border: 1px solid #e9ecef;
+}
+.task-item span {
+    max-width: 60%;
+}
+.task-item div button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.task-item.completed {
+    background-color: #e9f5ee; 
+    opacity: 0.7;
+}
+.task-item.completed span {
+    text-decoration: line-through; 
+    color: #555;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+button:hover {
+    background-color: #357ABD; 
+}
+.task-item button[onclick^="deleteTask"] {
+    background-color: #e74c3c;
+}
+.task-item button[onclick^="deleteTask"]:hover {
+    background-color: #c0392b;
+}
+/* تخصيص زر الإنجاز */
+.task-item button[onclick^="toggleComplete"] {
+    background-color: #2ecc71; 
+}
+.task-item button[onclick^="toggleComplete"]:hover {
+    background-color: #27ae60;
+}
