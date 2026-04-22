@@ -99,16 +99,5 @@ button {
 button:hover {
     background-color: #357ABD; 
 }
-.task-item button[onclick^="deleteTask"] {
-    background-color: #e74c3c;
-}
-.task-item button[onclick^="deleteTask"]:hover {
-    background-color: #c0392b;
-}
-/* تخصيص زر الإنجاز */
-.task-item button[onclick^="toggleComplete"] {
-    background-color: #2ecc71; 
-}
-.task-item button[onclick^="toggleComplete"]:hover {
-    background-color: #27ae60;
-}
+
+   
